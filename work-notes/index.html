@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Work Notes</title>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\bootstrap-grid.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center border-bottom display-4">Work Notes</h1>
+
+    <form>
+      <div class="border-bottom mt-4">
+        <h2 class="text-muted">User Information:</h2>
+      <div class="form-row">
+        <div class="form-group col-6">
+          <label for="upiTextInput" class="col-form-label-sm">UPI</label>
+          <input type="text" class="form-control form-control-sm" id="upiTextInput">
+	  <button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#upiTextInput">Copy</button>
+        </div>
+	<div class="form-group col-6">
+          <label for="usernameTextInput" class="col-form-label-sm">511</label>
+          <input type="text" class="form-control form-control-sm" id="usernameTextInput">
+	  <button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#usernameTextInput">Copy</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="emailTextInput" class="col-form-label-sm">Email</label>
+        <input type="text" class="form-control form-control-sm" id="emailTextInput">
+	<button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#emailTextInput">Copy</button>
+      </div>
+
+      <div class="form-group">
+        <label for="locationTextInput" class="col-form-label-sm">Location</label>
+        <input type="text" class="form-control form-control-sm" id="locationTextInput">
+	<button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#locationTextInput">Copy</button>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-6">
+          <label for="phoneTextInput" class="col-form-label-sm">Phone</label>
+          <input type="text" class="form-control form-control-sm" id="phoneTextInput">
+	  <button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#phoneTextInput">Copy</button>
+        </div>
+
+        <div class="form-group col-6">
+          <label for="kbTextInput" class="col-form-label-sm">KB</label>
+          <input type="text" class="form-control form-control-sm" id="kbTextInput">
+  	       <button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#kbTextInput">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-bottom mt-4">
+      <h2 class="text-muted">Work Notes:</h2>
+
+      <div class="form-group">
+        <textarea class="form-control" id="actionTextArea" rows="7"></textarea>
+	      <button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#actionTextArea">Copy</button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="vvrTextArea" class="col-form-label-sm">VVReport</label>
+      <textarea class="form-control" id="vvrTextArea" rows="2"></textarea>
+	    <button type="button" class="btn btn-outline-secondary btn-sm" data-clipboard-target="#vvrTextArea">Copy</button>
+    </div>
+
+    <div class="form-group">
+      <button type="button" class="btn btn-outline-primary btn-sm" id="compileButton">Compile</button>
+      <button type="button" class="btn btn-primary btn-sm" data-clipboard-target="#workNotes">Copy All</button>
+      <button type="reset" class="btn btn-outline-secondary btn-sm" id="resetButton">Reset</button>
+    </div>
+
+    <div class="form-group">
+        <textarea class="form-control" id="workNotes" rows="15"></textarea>
+    </div>
+  </div>
+</form>
+</div>
+
+  <script src="js\clipboard.min.js"></script>
+  <script src="js\bootstrap.min.js"></script>
+  <script src="js\app.js"></script>
+<body>
+</html>
